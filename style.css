@@ -8,7 +8,7 @@ body{
     height: 100vh;
     overflow-y: scroll;
     font-family: 'Common Pixel', sans-serif;
-    background-color: #ffe573;
+    background-color: #ffdb3a;
 }
 
 /* ====Nav Bar==== */
@@ -24,11 +24,11 @@ nav{
 nav div{
     font-size: 27px;
     font-weight: 700;
-    color: #ffd615;
+    color: #ffdb3a;
 }
 nav button{
-    border-color: #ffd615 !important;
-    color: #ffd615 !important;
+    border-color: #ffdb3a !important;
+    color: #ffdb3a !important;
 }
 nav button:hover{
     background-color: #ffd615 !important;
@@ -62,7 +62,7 @@ nav a:hover{
 /*headtail*/
 .headtail{
     font-size: 18px;
-    width: 180px;
+    width: 160px;
     display: flex;
     justify-content: space-between;
     margin: 15px auto;
@@ -173,7 +173,7 @@ select{
     flex-direction: column;
 }
 .sideBar a{
-    color: #ffe573;
+    color: #ffdb3a;
     text-decoration: none;
     text-align: center;
     line-height: 45px;
