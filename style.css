@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('http://fonts.cdnfonts.com/css/common-pixel');
+
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    overflow-y: scroll;
+    font-family: 'Common Pixel', sans-serif;
+    background-color: #ffe573;
+}
+
+/* ====Nav Bar==== */
+nav{
+    width: 100%;
+    padding: 15px 30px;
+    background-color: #fff;
+    border-bottom: 1px lightgrey;
+    display: flex;
+    justify-content: space-between;
+    user-select: none;
+}
+nav div{
+    font-size: 27px;
+    font-weight: 700;
+    color: #ffd615;
+}
+nav button{
+    border-color: #ffd615 !important;
+    color: #ffd615 !important;
+}
+nav button:hover{
+    background-color: #ffd615 !important;
+    color: #fff !important;
+}
+nav a{
+    color: #ffe573;
+    text-decoration: none;
+    padding-right: 10px;
+    font-size: 26px;
+}
+nav a:hover{
+    color: #ffd000;
+}
+.openBtn{
+    font-size: 29px;
+    cursor: pointer;
+    display: none;
+}
+
+/* ====Home Sec==== */
+#home{
+    text-align: center;
+    height: 50%;
+    padding: 20px;
+}
+#home img{
+    margin-top: 10px;
+}
+
+/*headtail*/
+.headtail{
+    font-size: 18px;
+    width: 180px;
+    display: flex;
+    justify-content: space-between;
+    margin: 15px auto;
+    font-style: inherit;
+    user-select: none;
+}
+.headtail span{
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: #fff;
+}
+
+/*active & disable*/
+.active{
+    background-color: #fff;
+    color: #ffe573 !important;
+}
+.active2{
+    background-color: #fff;
+    color: #ffd615 !important;
+}
+.disable{
+    background-color: #fff;
+}
+
+/*sol*/
+.sol{
+    width: 270px;
+    display: flex;
+    justify-content: space-between;
+    margin: 10px auto;
+    margin-top: 25px !important;
+    user-select: none;
+}
+.sol span{
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: #fff;
+}
+.select{
+    width: 270px !important;
+    margin: 10px auto;
+    margin-top: 20px !important;
+}
+select{
+    color: #ffd615 !important;
+}
+#home button{
+    background-color: #fff;
+    border-color: #fff;
+    color: #ffe573;
+    margin-top: 18px;
+    width: 150px;
+}
+
+
+/*footer section*/
+.footer-section{
+    position: absolute;
+    bottom: 0;
+    background-color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    width: 100%;
+}
+.footer-section p{
+    width: 80%;
+    margin: 0 auto;
+    line-height: 1.9em;
+    font-size: 14px;
+    color: #ffd615;
+    line-height: 1.7em;
+}
+
+/*SideBar*/
+.sideBar{
+    width: 0px;
+    height: 100vh;
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 2;
+    transition: all 0.45s ease;
+    color: #ffe573 !important;
+}
+.sideBar.open{
+    width: 250px !important;
+}
+.bar-wrapper{
+    min-height: 59px;
+    text-align: end;
+    padding: 0 12px;
+    border-bottom: 1px solid #efefef;
+}
+.bar-wrapper i{
+    line-height: 59px;
+    font-size: 30px;
+    cursor: pointer;
+    padding-right: 25px;
+}
+.side-wrapper{
+    padding: 0 12px;
+    padding-top: 18px;
+    display: flex;
+    flex-direction: column;
+}
+.sideBar a{
+    color: #ffe573;
+    text-decoration: none;
+    text-align: center;
+    line-height: 45px;
+    margin: 8px 0;
+    transition: all 0.4s ease;
+    border-bottom: 1px solid #efefef;
+}
+.sideBar a:hover{
+    background: #f7f7f7;
+}
+
+@media(max-width:750px){
+    nav a, nav .btn{
+        display: none;
+    }
+    nav .openBtn{
+        display: inline-block;
+    }
+}
+@media(max-width:750px){
+    nav{
+        padding: 10px 20px;
+    }
+    nav div{
+        font-size: 19px !important;
+    }
+    nav .openBtn{
+        font-size: 23px !important;
+    }
+}
+@media(max-width:550px){
+    .footer-section p{
+        font-size: 13px;
+    }
+}
+@media(max-width:440px){
+    .footer-section p{
+        font-size: 11px;
+    }
+}
